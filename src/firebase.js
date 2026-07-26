@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import {getFirestore,} from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDkaxwyw2vR_R_xxxxxxxxxxxxx",
+  apiKey: "use your own API Key",
   authDomain: "strooprush-ee873.firebaseapp.com",
   projectId: "strooprush-ee873",
   storageBucket: "strooprush-ee873.firebasestorage.app",
