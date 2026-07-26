@@ -1,16 +1,149 @@
-# React + Vite
+#  Stroop Rush
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fast-paced color recognition game inspired by the Stroop Effect. Test your concentration, reaction speed, and cognitive flexibility by selecting the font color, not the word displayed.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+##  Features
 
-## React Compiler
+- 🎯 Stroop Effect based gameplay
+- 🟢 Easy, 🟡 Medium, 🔴 Hard difficulty modes
+- ⏳ Dynamic timer based on difficulty
+- 🏆 High Score saved using Local Storage
+- 🔥 Combo & Best Combo tracking
+- 🚀 Level progression
+- 🏅 Achievement System
+- 🎯 Daily Challenge Mode
+- 🔊 Sound Effects
+- 📳 Vibration Support (Mobile)
+- 🌙 Dark Mode
+- 📊 Game Statistics
+- ☁️ Firebase Integration for Online Leaderboard
+- 📱 Fully Responsive Design
+- 📲 Progressive Web App (PWA) Support
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Frontend
+- React.js
+- Vite
+- JavaScript
+- CSS3
+
+### Backend Services
+- Firebase Firestore
+- Firebase Hosting
+
+### Browser APIs
+- Local Storage
+- Audio API
+- Vibration API
+
+
+##  Installation
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the development server
+
+```bash
+npm run dev
+```
+
+---
+
+##  Production Build
+
+```bash
+npm run build
+```
+
+Preview production build
+
+```bash
+npm run preview
+```
+
+---
+
+##  Firebase Hosting
+
+Build the project
+
+```bash
+npm run build
+```
+
+Deploy
+
+```bash
+firebase deploy
+```
+
+---
+
+## Link
+
+https://strooprush-ee873.web.app
+
+##  Gameplay
+
+1. Read the color prompt.
+2. Ignore the written word.
+3. Select the **font color**.
+4. Answer before the timer reaches zero.
+5. Build combos and achieve higher levels.
+6. Compete on the online leaderboard.
+
+---
+
+## 🎯 Difficulty Modes
+
+### 🟢 Easy
+- More time
+- Beginner friendly
+
+### 🟡 Medium
+- Balanced gameplay
+
+### 🔴 Hard
+- Less time
+- Faster gameplay
+- More challenging
+
+---
+
+## 🏆 Achievements
+
+Examples include:
+
+- First Score
+- Combo Master
+- High Scorer
+- Speed Runner
+- Daily Challenge Completed
+
+
+##  Mobile Support
+
+- Responsive UI
+- Touch Friendly Controls
+- Installable as a PWA (Progressive Web App)
+- Vibration Feedback
+- Full Screen Experience
+
+
+##  Firebase Features
+
+- Online Leaderboard
+- Cloud Score Storage
+- Firestore Database
+- Firebase Hosting
+
+
+## Developed By
+Abhishek Ghadge
