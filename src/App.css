@@ -1,0 +1,331 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, Arial, sans-serif;
+  background:
+    radial-gradient(
+      circle at top,
+      #1e293b,
+      #0f172a
+    );
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.start-card,
+.game-card {
+  width: 100%;
+  max-width: 450px;
+}
+
+.start-card {
+  background: #1e293b;
+  border-radius: 24px;
+  padding: 35px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 20px 50px rgba(0,0,0,.4);
+}
+
+.start-card h1 {
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  color: #94a3b8;
+  margin-bottom: 25px;
+}
+
+.start-btn {
+  width: 100%;
+  margin-top: 25px;
+  padding: 18px;
+  border: none;
+  border-radius: 16px;
+  background: #3b82f6;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.timer-container {
+  height: 12px;
+  background: #1e293b;
+  border-radius: 50px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.timer-bar {
+  height: 100%;
+  background:
+    linear-gradient(
+      90deg,
+      #22c55e,
+      #eab308,
+      #ef4444
+    );
+  transition: width .1s linear;
+}
+
+.prompt {
+  color: #94a3b8;
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+}
+
+.stroop-word {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 35px;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.option-card {
+  border: none;
+  border-radius: 20px;
+  padding: 25px;
+  color: white;
+  font-size: 1.15rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: .15s;
+}
+
+.option-card:hover {
+  transform: scale(1.05);
+}
+
+.option-card:active {
+  transform: scale(.95);
+}
+
+.countdown-screen {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown-number {
+  color: white;
+  font-size: 8rem;
+  font-weight: 900;
+  animation: zoom 1s infinite;
+}
+
+.pulse {
+  animation: pulse .2s;
+}
+
+.shake {
+  animation: shake .4s;
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(.6);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes shake {
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+}
+
+@media (max-width: 600px) {
+  .stroop-word {
+    font-size: 3rem;
+  }
+
+  .option-card {
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  .top-bar {
+    font-size: .9rem;
+  }
+}
+
+.achievement {
+  background: linear-gradient(
+    90deg,
+    #f59e0b,
+    #f97316
+  );
+
+  color: white;
+
+  padding: 12px;
+
+  border-radius: 15px;
+
+  text-align: center;
+
+  margin-bottom: 15px;
+
+  font-weight: bold;
+
+  animation: slideDown 0.4s;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.achievement-list {
+  margin-top: 15px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.achievement-badge {
+  background: linear-gradient(
+    90deg,
+    #f59e0b,
+    #f97316
+  );
+
+  color: white;
+
+  padding: 10px;
+
+  border-radius: 12px;
+
+  font-weight: bold;
+} 
+
+.record-text {
+  color: #22c55e;
+  margin-bottom: 15px;
+  animation: pulse 1s infinite;
+}
+
+.dark-mode {
+  background: #111827;
+  color: white;
+}
+
+.dark-mode .start-card,
+.dark-mode .game-card {
+  background: #1f2937;
+  color: white;
+}
+
+.dark-mode button {
+  color: white;
+}
+
+.name-input {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  text-align: center;
+}
+
+.game-logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.difficulty-row {
+  display: flex;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.difficulty-row button {
+  flex: 1;
+}
+
+.bottom-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.bottom-buttons button {
+  flex: 1;
+}
+
+.small-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 70px;
+  padding: 8px;
+}
+
+.small-btn small {
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.name-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
